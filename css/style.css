@@ -930,6 +930,7 @@ ul {
 .coffe__img {
     width: 544px;
     height: 363px;
+    object-fit: cover;
 }
 
 .close-bx {
@@ -984,7 +985,9 @@ ul {
     /* border: 1px solid blue; */
 }
 
-.coffe__imgbox {}
+.coffe__imgbox {
+    overflow: hidden;
+}
 
 .coffe__img {}
 
