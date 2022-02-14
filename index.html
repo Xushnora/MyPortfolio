@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyPortfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js"
+        integrity="sha512-zKaK6G2LZC5YZTX0vKmD7xOwd1zrEEMal4zlTf5Ved/A1RrnW+qt8pWDfo7oz+xeChECS/P9dv6EDwwPwelFfQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./css/flexboxgrid.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -121,14 +125,9 @@
                 <div class="main__desc">
                     <span class="main__span">Welcome</span>
                     <!-- SHU QISMI ISHLAMIYAPTI responsiveda -->
-                    <h1 class="main__title ttl">
-                        <span class="ttl__span">I am a</span>
-                        <div class="message">
-                            <div class="word1">Xushnora</div>
-                            <div class="word2">Developer</div>
-                            <div class="word3">Creative</div>
-                        </div>
-                    </h1>
+                    <div class="header-area"> 
+                        <h2 class="main__title">I'm a <span class="animation-span"></span></h2> 
+                    </div> 
                     <p class="main__text">based in Tashkent, Uzbekistan.</p>
                     <a class="main__btn" href="#contact">hire me</a>
                     <div class="main__arrow">
@@ -422,6 +421,20 @@
 
 
     <script src="js/main.js"></script>
+
+    <script src="js/typed.js"></script> 
+    <script> 
+      var typed = new Typed('.animation-span', { 
+        strings: [ 
+          'Xushnora', 
+          'Developer', 
+          'Blogger' 
+        ], 
+        typeSpeed: 50, 
+        backSpeed: 50, 
+        loop: 50
+      }); 
+    </script> 
 
     <!-- <script src="./js/typed.js"></script>
     <script>

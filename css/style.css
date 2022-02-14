@@ -208,6 +208,7 @@ ul {
     position: relative;
     width: 550px;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 .ttl__span {
@@ -858,7 +859,7 @@ ul {
 .portfolio__colors {
     width: 315px;
     height: 0;
-    background-color: rgba(0, 0, 0, 0.685);
+    background-color: rgba(0, 0, 0, 0.815);
     position: absolute;
     top: 5%;
     left: 15%;
@@ -872,7 +873,7 @@ ul {
 .portfolio__links-box {
     position: absolute;
     top: 0;
-    left: 35%;
+    left: 45%;
     transition: all 0.4s ease;
     opacity: 0;
 }
@@ -1146,7 +1147,10 @@ ul {
     .about__big-title {
         top: 0;
     }
-
+/* 
+    .portfolio__item{
+        padding: 0;
+    } */
 
 }
 

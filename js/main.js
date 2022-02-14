@@ -59,3 +59,11 @@ jQuery(document).ready(function ($) {
         content: 'I am a Web Developer'
     });
 });
+
+
+var typed = new Typed(".type", {
+    strings: [ "Frontend developer","Backend developer","Freelancer","UI designer"],
+    typeSpeed: 160,
+    backSpeed: 120,
+    loop: true,
+});
