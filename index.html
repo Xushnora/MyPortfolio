@@ -122,18 +122,20 @@
                         </nav>
                     </div>
                 </div>
-                <div class="main__desc">
-                    <span class="main__span">Welcome</span>
-                    <!-- SHU QISMI ISHLAMIYAPTI responsiveda -->
-                    <div class="header-area"> 
-                        <h2 class="main__title">I'm a <span class="animation-span"></span></h2> 
-                    </div> 
-                    <p class="main__text">based in Tashkent, Uzbekistan.</p>
-                    <a class="main__btn" href="#contact">hire me</a>
-                    <div class="main__arrow">
-                        <button class="main__arrow-btn">
-                            <i class='bx bx-chevrons-down'></i>
-                        </button>
+                <div class="main__content">
+                    <div id="particles-js"></div>
+                    <div class="main__desc">
+                        <span class="main__span">Welcome</span>
+                        <div class="header-area"> 
+                            <h2 class="main__title">I'm a <span class="animation-span"></span></h2> 
+                        </div> 
+                        <p class="main__text">based in Tashkent, Uzbekistan.</p>
+                        <a class="main__btn" href="#contact">hire me</a>
+                        <div class="main__arrow">
+                            <button class="main__arrow-btn">
+                               <a href="#contact"><i class='bx bx-chevrons-down'></i></a>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div id="about" class="about">
@@ -179,6 +181,77 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="myskills">
+                            <h3 class="myskills__title">My Skills</h3>
+                            <div class="myskills__row row">
+                                <div class="myskills__progres progres col-md-6 col-xs-12">
+                                    <div class="progres__box">
+                                     <div class="progres__row">
+                                         <p class="progres__text">HTML/CSS</p>
+                                         <span class="progres__foiz">88%</span>
+                                     </div>
+                                     <div class="progres__static">
+                                         <div class="progres__bar"></div>
+                                     </div>
+                                    </div>
+                                 </div>
+                                 <div class="myskills__progres progres col-md-6 col-xs-12">
+                                    <div class="progres__box">
+                                     <div class="progres__row">
+                                         <p class="progres__text">Sass/Bootstrap</p>
+                                         <span class="progres__foiz">15%</span>
+                                     </div>
+                                     <div class="progres__static">
+                                         <div class="progres__bar sass"></div>
+                                     </div>
+                                    </div>
+                                 </div>
+                                 <div class="myskills__progres progres col-md-6 col-xs-12">
+                                    <div class="progres__box">
+                                     <div class="progres__row">
+                                         <p class="progres__text">C</p>
+                                         <span class="progres__foiz">35%</span>
+                                     </div>
+                                     <div class="progres__static">
+                                         <div class="progres__bar cc"></div>
+                                     </div>
+                                    </div>
+                                 </div>
+                                 <div class="myskills__progres progres col-md-6 col-xs-12">
+                                    <div class="progres__box">
+                                     <div class="progres__row">
+                                         <p class="progres__text">JavaScript</p>
+                                         <span class="progres__foiz">5%</span>
+                                     </div>
+                                     <div class="progres__static">
+                                         <div class="progres__bar js"></div>
+                                     </div>
+                                    </div>
+                                 </div>
+                                 <div class="myskills__progres progres col-md-6 col-xs-12">
+                                    <div class="progres__box">
+                                     <div class="progres__row">
+                                         <p class="progres__text">React</p>
+                                         <span class="progres__foiz">0%</span>
+                                     </div>
+                                     <div class="progres__static">
+                                         <div class="progres__bar rc"></div>
+                                     </div>
+                                    </div>
+                                 </div>
+                                 <div class="myskills__progres progres col-md-6 col-xs-12">
+                                    <div class="progres__box">
+                                     <div class="progres__row">
+                                         <p class="progres__text">Python</p>
+                                         <span class="progres__foiz">40%</span>
+                                     </div>
+                                     <div class="progres__static">
+                                         <div class="progres__bar pth"></div>
+                                     </div>
+                                    </div>
+                                 </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div id="portfolio" class="portfolio">
@@ -186,6 +259,21 @@
                         <p class="about__big-title">portfolio</p>
                         <h2 class="portfolio__title about__title">My Work</h2>
                         <ul class="portfolio__list row">
+                            <li class="portfolio__item col-lg-4 col-sm-6 col-xs-12">
+                                <div class="portfolio__hover" id="cofeContent">
+                                    <div class="portfolio__img"></div>
+                                    <div class="portfolio__colors"></div>
+                                    <div class="portfolio__links-box">
+                                        <a class="portfolio__icon"
+                                            href="https://coffee-proect.netlify.app/">
+                                            <i class='bx bxl-netlify mini-link'></i>
+                                        </a>
+                                        <a class="portfolio__icon" href="https://github.com/Xushnora/coffee.git">
+                                            <i class='bx bxl-github mini-link'></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
                             <li class="portfolio__item col-lg-4 col-sm-6 col-xs-12">
                                 <div class="portfolio__hover" id="portContent">
                                     <div class="portfolio__img"></div>
@@ -202,7 +290,7 @@
                                 </div>
                             </li>
                             <li class="portfolio__item col-lg-4 col-sm-6 col-xs-12">
-                                <div class="portfolio__hover">
+                                <div class="portfolio__hover" id="lithoContent">
                                     <div class="portfolio__img"></div>
                                     <div class="portfolio__colors"></div>
                                     <div class="portfolio__links-box">
@@ -217,7 +305,7 @@
                                 </div>
                             </li>
                             <li class="portfolio__item col-lg-4 col-sm-6 col-xs-12">
-                                <div class="portfolio__hover">
+                                <div class="portfolio__hover" id="besmikContent">
                                     <div class="portfolio__img"></div>
                                     <div class="portfolio__colors"></div>
                                     <div class="portfolio__links-box">
@@ -232,7 +320,7 @@
                                 </div>
                             </li>
                             <li class="portfolio__item col-lg-4 col-sm-6 col-xs-12">
-                                <div class="portfolio__hover">
+                                <div class="portfolio__hover" id="starkContent">
                                     <div class="portfolio__img"></div>
                                     <div class="portfolio__colors"></div>
                                     <div class="portfolio__links-box">
@@ -247,22 +335,7 @@
                                 </div>
                             </li>
                             <li class="portfolio__item col-lg-4 col-sm-6 col-xs-12">
-                                <div class="portfolio__hover">
-                                    <div class="portfolio__img"></div>
-                                    <div class="portfolio__colors"></div>
-                                    <div class="portfolio__links-box">
-                                        <a class="portfolio__icon"
-                                            href="https://app.netlify.com/teams/xushnora/overview">
-                                            <i class='bx bxl-netlify mini-link'></i>
-                                        </a>
-                                        <a class="portfolio__icon" href="https://github.com/Xushnora">
-                                            <i class='bx bxl-github mini-link'></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="portfolio__item col-lg-4 col-sm-6 col-xs-12">
-                                <div class="portfolio__hover">
+                                <div class="portfolio__hover" id="productContent">
                                     <div class="portfolio__img"></div>
                                     <div class="portfolio__colors"></div>
                                     <div class="portfolio__links-box">
@@ -281,7 +354,7 @@
                     <div class="about__modal coffe" id="cofeeModal">
                         <div class="coffe__page">
                             <button id="closeBtncofe" class="cofee__btn"><i class="bx bx-x close-bx"></i></button>
-                            <h2 class="coffe__title">Project title 1</h2>
+                            <h2 class="coffe__title">Coffee</h2>
                             <div class="coffe__boxs row">
                                 <div class="col-sm-6 coffe__col img-col">
                                     <div class="coffe__imgbox">
@@ -309,7 +382,307 @@
                                                 <p class="coffe__lg">February 5, 2022</p>
                                             </li>
                                             <li class="coffe__item">
-                                                <span class="coffe__span">URL:</span><a href="#">www.example.com</a>
+                                                <span class="coffe__span">URL:</span><a class="coffe__links" href="https://coffee-proect.netlify.app/">www.example.com</a>
+                                            </li>
+                                            <li class="coffe__item">
+                                                <span class="coffe__span">Share:</span>
+                                                <ul class="coffe__media-list share">
+                                                    <li class="share__item">
+                                                        <a class="share__link" href="#"><i
+                                                                class='bx bxl-facebook share__bx'></i></a>
+                                                    </li>
+                                                    <li class="share__item">
+                                                        <a class="share__link" href="#"><i
+                                                                class='bx bxl-linkedin share__bx'></i></a>
+                                                    </li>
+                                                    <li class="share__item">
+                                                        <a class="share__link" href="#"><i
+                                                                class='bx bxl-instagram-alt share__bx'></i></a>
+                                                    </li>
+                                                    <li class="share__item">
+                                                        <a class="share__link" href="#"><i
+                                                                class='bx bxl-telegram share__bx'></i></a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__modal coffe" id="portModal">
+                        <div class="coffe__page">
+                            <button id="closeBtnPort" class="cofee__btn"><i class="bx bx-x close-bx"></i></button>
+                            <h2 class="coffe__title">Portfolio</h2>
+                            <div class="coffe__boxs row">
+                                <div class="col-sm-6 coffe__col img-col">
+                                    <div class="coffe__imgbox">
+                                        <img class="coffe__img" src="./imgs/portfolio1.jpg" alt="portfolio">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 coffe__col">
+                                    <div class="coffe__decs cofdesc">
+                                        <h3 class="cofdesc__title">Project info:</h3>
+                                        <p class="cofdesc__text">Quidam lisque persius interesset his et, in quot quidam
+                                            persequeris vim, ad mea essent possim iriure. Lisque persius interesset his
+                                            et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
+                                        <h3 class="cofdesc__title">Project Details:</h3>
+                                        <ul class="coffe__list">
+                                            <li class="coffe__item">
+                                                <span class="coffe__span">Technologies:</span>
+                                                <p class="coffe__lg">HTML5, CSS3, Js</p>
+                                            </li>
+                                            <li class="coffe__item">
+                                                <span class="coffe__span">Industry:</span>
+                                                <p class="coffe__lg">Web sayt</p>
+                                            </li>
+                                            <li class="coffe__item">
+                                                <span class="coffe__span">Date:</span>
+                                                <p class="coffe__lg">February 5, 2022</p>
+                                            </li>
+                                            <li class="coffe__item">
+                                                <span class="coffe__span">URL:</span><a class="coffe__links" href="#">www.example.com</a>
+                                            </li>
+                                            <li class="coffe__item">
+                                                <span class="coffe__span">Share:</span>
+                                                <ul class="coffe__media-list share">
+                                                    <li class="share__item">
+                                                        <a class="share__link" href="#"><i
+                                                                class='bx bxl-facebook share__bx'></i></a>
+                                                    </li>
+                                                    <li class="share__item">
+                                                        <a class="share__link" href="#"><i
+                                                                class='bx bxl-linkedin share__bx'></i></a>
+                                                    </li>
+                                                    <li class="share__item">
+                                                        <a class="share__link" href="#"><i
+                                                                class='bx bxl-instagram-alt share__bx'></i></a>
+                                                    </li>
+                                                    <li class="share__item">
+                                                        <a class="share__link" href="#"><i
+                                                                class='bx bxl-telegram share__bx'></i></a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__modal coffe" id="lithoModal">
+                        <div class="coffe__page">
+                            <button id="closeBtnLitho" class="cofee__btn"><i class="bx bx-x close-bx"></i></button>
+                            <h2 class="coffe__title">Litho</h2>
+                            <div class="coffe__boxs row">
+                                <div class="col-sm-6 coffe__col img-col">
+                                    <div class="coffe__imgbox">
+                                        <img class="coffe__img" src="./imgs/project4.jpg" alt="portfolio">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 coffe__col">
+                                    <div class="coffe__decs cofdesc">
+                                        <h3 class="cofdesc__title">Project info:</h3>
+                                        <p class="cofdesc__text">Quidam lisque persius interesset his et, in quot quidam
+                                            persequeris vim, ad mea essent possim iriure. Lisque persius interesset his
+                                            et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
+                                        <h3 class="cofdesc__title">Project Details:</h3>
+                                        <ul class="coffe__list">
+                                            <li class="coffe__item">
+                                                <span class="coffe__span">Technologies:</span>
+                                                <p class="coffe__lg">HTML5, CSS3, Js</p>
+                                            </li>
+                                            <li class="coffe__item">
+                                                <span class="coffe__span">Industry:</span>
+                                                <p class="coffe__lg">Web sayt</p>
+                                            </li>
+                                            <li class="coffe__item">
+                                                <span class="coffe__span">Date:</span>
+                                                <p class="coffe__lg">February 5, 2022</p>
+                                            </li>
+                                            <li class="coffe__item">
+                                                <span class="coffe__span">URL:</span><a class="coffe__links" href="#">www.example.com</a>
+                                            </li>
+                                            <li class="coffe__item">
+                                                <span class="coffe__span">Share:</span>
+                                                <ul class="coffe__media-list share">
+                                                    <li class="share__item">
+                                                        <a class="share__link" href="#"><i
+                                                                class='bx bxl-facebook share__bx'></i></a>
+                                                    </li>
+                                                    <li class="share__item">
+                                                        <a class="share__link" href="#"><i
+                                                                class='bx bxl-linkedin share__bx'></i></a>
+                                                    </li>
+                                                    <li class="share__item">
+                                                        <a class="share__link" href="#"><i
+                                                                class='bx bxl-instagram-alt share__bx'></i></a>
+                                                    </li>
+                                                    <li class="share__item">
+                                                        <a class="share__link" href="#"><i
+                                                                class='bx bxl-telegram share__bx'></i></a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__modal coffe" id="besmikModal">
+                        <div class="coffe__page">
+                            <button id="closeBtnBesmik" class="cofee__btn"><i class="bx bx-x close-bx"></i></button>
+                            <h2 class="coffe__title">Besmik</h2>
+                            <div class="coffe__boxs row">
+                                <div class="col-sm-6 coffe__col img-col">
+                                    <div class="coffe__imgbox">
+                                        <img class="coffe__img" src="./imgs/project6.jpg" alt="portfolio">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 coffe__col">
+                                    <div class="coffe__decs cofdesc">
+                                        <h3 class="cofdesc__title">Project info:</h3>
+                                        <p class="cofdesc__text">Quidam lisque persius interesset his et, in quot quidam
+                                            persequeris vim, ad mea essent possim iriure. Lisque persius interesset his
+                                            et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
+                                        <h3 class="cofdesc__title">Project Details:</h3>
+                                        <ul class="coffe__list">
+                                            <li class="coffe__item">
+                                                <span class="coffe__span">Technologies:</span>
+                                                <p class="coffe__lg">HTML5, CSS3, Js</p>
+                                            </li>
+                                            <li class="coffe__item">
+                                                <span class="coffe__span">Industry:</span>
+                                                <p class="coffe__lg">Web sayt</p>
+                                            </li>
+                                            <li class="coffe__item">
+                                                <span class="coffe__span">Date:</span>
+                                                <p class="coffe__lg">February 5, 2022</p>
+                                            </li>
+                                            <li class="coffe__item">
+                                                <span class="coffe__span">URL:</span><a class="coffe__links" href="#">www.example.com</a>
+                                            </li>
+                                            <li class="coffe__item">
+                                                <span class="coffe__span">Share:</span>
+                                                <ul class="coffe__media-list share">
+                                                    <li class="share__item">
+                                                        <a class="share__link" href="#"><i
+                                                                class='bx bxl-facebook share__bx'></i></a>
+                                                    </li>
+                                                    <li class="share__item">
+                                                        <a class="share__link" href="#"><i
+                                                                class='bx bxl-linkedin share__bx'></i></a>
+                                                    </li>
+                                                    <li class="share__item">
+                                                        <a class="share__link" href="#"><i
+                                                                class='bx bxl-instagram-alt share__bx'></i></a>
+                                                    </li>
+                                                    <li class="share__item">
+                                                        <a class="share__link" href="#"><i
+                                                                class='bx bxl-telegram share__bx'></i></a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__modal coffe" id="starkModal">
+                        <div class="coffe__page">
+                            <button id="closeBtnStark" class="cofee__btn"><i class="bx bx-x close-bx"></i></button>
+                            <h2 class="coffe__title">Stark</h2>
+                            <div class="coffe__boxs row">
+                                <div class="col-sm-6 coffe__col img-col">
+                                    <div class="coffe__imgbox">
+                                        <img class="coffe__img" src="./imgs/project5.jpg" alt="portfolio">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 coffe__col">
+                                    <div class="coffe__decs cofdesc">
+                                        <h3 class="cofdesc__title">Project info:</h3>
+                                        <p class="cofdesc__text">Quidam lisque persius interesset his et, in quot quidam
+                                            persequeris vim, ad mea essent possim iriure. Lisque persius interesset his
+                                            et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
+                                        <h3 class="cofdesc__title">Project Details:</h3>
+                                        <ul class="coffe__list">
+                                            <li class="coffe__item">
+                                                <span class="coffe__span">Technologies:</span>
+                                                <p class="coffe__lg">HTML5, CSS3, Js</p>
+                                            </li>
+                                            <li class="coffe__item">
+                                                <span class="coffe__span">Industry:</span>
+                                                <p class="coffe__lg">Web sayt</p>
+                                            </li>
+                                            <li class="coffe__item">
+                                                <span class="coffe__span">Date:</span>
+                                                <p class="coffe__lg">February 5, 2022</p>
+                                            </li>
+                                            <li class="coffe__item">
+                                                <span class="coffe__span">URL:</span><a class="coffe__links" href="#">www.example.com</a>
+                                            </li>
+                                            <li class="coffe__item">
+                                                <span class="coffe__span">Share:</span>
+                                                <ul class="coffe__media-list share">
+                                                    <li class="share__item">
+                                                        <a class="share__link" href="#"><i
+                                                                class='bx bxl-facebook share__bx'></i></a>
+                                                    </li>
+                                                    <li class="share__item">
+                                                        <a class="share__link" href="#"><i
+                                                                class='bx bxl-linkedin share__bx'></i></a>
+                                                    </li>
+                                                    <li class="share__item">
+                                                        <a class="share__link" href="#"><i
+                                                                class='bx bxl-instagram-alt share__bx'></i></a>
+                                                    </li>
+                                                    <li class="share__item">
+                                                        <a class="share__link" href="#"><i
+                                                                class='bx bxl-telegram share__bx'></i></a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__modal coffe" id="productModal">
+                        <div class="coffe__page">
+                            <button id="closeBtnProduct" class="cofee__btn"><i class="bx bx-x close-bx"></i></button>
+                            <h2 class="coffe__title">Product</h2>
+                            <div class="coffe__boxs row">
+                                <div class="col-sm-6 coffe__col img-col">
+                                    <div class="coffe__imgbox">
+                                        <img class="coffe__img" src="./imgs/project3.jpg" alt="portfolio">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 coffe__col">
+                                    <div class="coffe__decs cofdesc">
+                                        <h3 class="cofdesc__title">Project info:</h3>
+                                        <p class="cofdesc__text">Quidam lisque persius interesset his et, in quot quidam
+                                            persequeris vim, ad mea essent possim iriure. Lisque persius interesset his
+                                            et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
+                                        <h3 class="cofdesc__title">Project Details:</h3>
+                                        <ul class="coffe__list">
+                                            <li class="coffe__item">
+                                                <span class="coffe__span">Technologies:</span>
+                                                <p class="coffe__lg">HTML5, CSS3, Js</p>
+                                            </li>
+                                            <li class="coffe__item">
+                                                <span class="coffe__span">Industry:</span>
+                                                <p class="coffe__lg">Web sayt</p>
+                                            </li>
+                                            <li class="coffe__item">
+                                                <span class="coffe__span">Date:</span>
+                                                <p class="coffe__lg">February 5, 2022</p>
+                                            </li>
+                                            <li class="coffe__item">
+                                                <span class="coffe__span">URL:</span><a class="coffe__links" href="#">www.example.com</a>
                                             </li>
                                             <li class="coffe__item">
                                                 <span class="coffe__span">Share:</span>
@@ -348,12 +721,13 @@
                                 <div class="col-sm-4 col-xs-12">
                                     <div class="contact__desc adress">
                                         <h3 class="adress__title">ADDRESS</h3>
-                                        <p class="adress__text">4th Floor, Plot No.22, <br>
-                                            145 Murphy Canyon Rd. <br>
-                                            San Diego CA 2028</p>
+                                        <p class="adress__text">Tashkent region<br>
+                                            Tashkent district<br>
+                                            Begubor quarter, 3rd street, 5th hause
+                                            </p>
                                         <a class="adress__tel" href="tel:998338701201"><i
-                                                class='bx bxs-phone bx-rotate-270'></i> (998) 870
-                                            12 01</a>
+                                                class='bx bxs-phone bx-rotate-270'></i> (998) 202
+                                            02 02</a>
                                         <a class="adress__tel" href="xushnoranishonova@gmail.com"><i
                                                 class='bx bx-mail-send'></i>xushnoranishonova@gmail.com</a>
                                     </div>
@@ -436,19 +810,8 @@
       }); 
     </script> 
 
-    <!-- <script src="./js/typed.js"></script>
-    <script>
-        var typed = new Typed('.ttl__span', {
-            strings: [
-                "Xushnora",
-                "Developer",
-                "Frelanser"
-            ],
-            typeSpeed: 50,
-            backSpeed: 50,
-            loop: true
-        });
-    </script> -->
+    <script src="js/particles.js"></script> <script src="js/app.js"></script>
+
 </body>
 
 </html>

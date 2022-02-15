@@ -18,7 +18,7 @@ elMenuBtn.addEventListener('click', function () {
 
 // MODAL PORTFOLIO
 
-let elProject = document.getElementById('portContent');
+let elProject = document.getElementById('cofeContent');
 let elModalcofe = document.getElementById('cofeeModal');
 let elClosecofe = document.getElementById('closeBtncofe');
 
@@ -28,7 +28,69 @@ elProject.addEventListener('click', function () {
 
 elClosecofe.addEventListener('click', function () {
     elModalcofe.classList.remove('test');
-})
+});
+
+let elProject2 = document.getElementById('portContent');
+let elModalcofe2 = document.getElementById('portModal');
+let elClosecofe2 = document.getElementById('closeBtnPort');
+
+elProject2.addEventListener('click', function () {
+    elModalcofe2.classList.add('test');
+});
+
+elClosecofe2.addEventListener('click', function () {
+    elModalcofe2.classList.remove('test');
+});
+
+
+let elProject3 = document.getElementById('lithoContent');
+let elModalcofe3 = document.getElementById('lithoModal');
+let elClosecofe3 = document.getElementById('closeBtnLitho');
+
+elProject3.addEventListener('click', function () {
+    elModalcofe3.classList.add('test');
+});
+
+elClosecofe3.addEventListener('click', function () {
+    elModalcofe3.classList.remove('test');
+});
+
+let elProject4 = document.getElementById('besmikContent');
+let elModalcofe4 = document.getElementById('besmikModal');
+let elClosecofe4 = document.getElementById('closeBtnBesmik');
+
+elProject4.addEventListener('click', function () {
+    elModalcofe4.classList.add('test');
+});
+
+elClosecofe4.addEventListener('click', function () {
+    elModalcofe4.classList.remove('test');
+});
+
+let elProject5 = document.getElementById('starkContent');
+let elModalcofe5 = document.getElementById('starkModal');
+let elClosecofe5 = document.getElementById('closeBtnStark');
+
+elProject5.addEventListener('click', function () {
+    elModalcofe5.classList.add('test');
+});
+
+elClosecofe5.addEventListener('click', function () {
+    elModalcofe5.classList.remove('test');
+});
+
+
+let elProject6 = document.getElementById('productContent');
+let elModalcofe6 = document.getElementById('productModal');
+let elClosecofe6 = document.getElementById('closeBtnProduct');
+
+elProject6.addEventListener('click', function () {
+    elModalcofe6.classList.add('test');
+});
+
+elClosecofe6.addEventListener('click', function () {
+    elModalcofe6.classList.remove('test');
+});
 
 
 

@@ -342,7 +342,7 @@ ul {
 /* welcome animatsiya */
 
 #box {
-    color: #fff;
+    color: var(--primary-color);
     font-size: 28px;
     font-weight: 600;
     display: flex;
@@ -388,7 +388,7 @@ ul {
     padding: 20px 15px;
     position: fixed;
     display: none;
-    z-index: 200;
+    z-index: 10000;
 }
 
 .header__page {
@@ -433,6 +433,7 @@ ul {
     position: fixed;
     top: -50%;
     transition: all 0.5s ease;
+    z-index: 1000;
 }
 
 .modal__page {
@@ -591,12 +592,79 @@ ul {
     border-color: #1baa80;
 }
 
+
+/* my skills */
+.myskills {
+    padding: 30px 50px 0 50px;
+}
+.myskills__title {
+    font-weight: 600;
+    font-size: 1.50rem;
+    color: #252b33;
+    margin: 24px 0;
+}
+.myskills__progres {
+}
+.progres {
+    margin-bottom: 24px;
+}
+.progres__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.progres__row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.progres__text {
+    font-weight: 500;
+}
+.progres__foiz {
+
+}
+.progres__static {
+    width: 100%;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 15px;
+}
+.progres__bar {
+    background-color: var(--primary-color);
+    width: 88%;
+    height: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.sass {
+    width: 15%;
+}
+.cc {
+    width: 35%;
+}
+.js {
+    width: 5%;
+}
+.rc {
+    width: 0%;
+}
+.pth {
+    width: 40%;
+}
+
+
 /* contact */
 
 .contact {
     padding: 100px 48px 72px 48px;
     background-color: #f8f9fa;
-
 }
 
 .contact__page {
@@ -780,8 +848,6 @@ ul {
     flex-direction: row;
 }
 
-/* portfolio */
-
 
 
 
@@ -882,7 +948,7 @@ ul {
     color: #fff;
     font-size: 30px;
     transition: all 0.4s ease;
-    animation: links 1s ease-in-out 1s alternate infinite;
+    animation: links 1.2s ease-in-out 1s alternate infinite;
 }
 
 @keyframes links {
@@ -896,7 +962,7 @@ ul {
 }
 
 .bxl-netlify {
-    animation: linkss 1s ease-in-out 1s alternate infinite;
+    animation: linkss 1.2s ease-in-out 1s alternate infinite;
 }
 
 @keyframes linkss {
@@ -926,11 +992,24 @@ ul {
 
 /* coffe modal */
 
+.main__content {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
 
 .coffe__img {
     width: 544px;
     height: 363px;
-    object-fit: cover;
+    object-fit: cover;  
 }
 
 .close-bx {
@@ -947,13 +1026,17 @@ ul {
     cursor: pointer;
 }
 
-
 .coffe {
     position: absolute;
     top: 30%;
-    left: 0;
+    right: 0;
+    transition: all 0.4s ease;
+    background-color: #fff;
     display: none;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+
 }
+
 
 .coffe__page {
     background-color: #fff;
@@ -965,40 +1048,29 @@ ul {
     text-align: center;
     margin-bottom: 24px;
     font-size: 1.50rem;
-    color: #252b33;
+    color: var(--primary-color);
     font-weight: 500;
     line-height: 1.2;
 }
 
-.coffe__boxs {}
-
-.row {}
-
-.col-sm-6 {}
-
 .img-col {
     text-align: center;
+    padding-left: 40px;
 }
 
 .coffe__col {
     padding-top: 20px;
-    /* border: 1px solid blue; */
 }
 
 .coffe__imgbox {
     overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-
-.coffe__img {}
-
-.coffe__decs {}
-
-.cofdesc {}
 
 .cofdesc__title {
     margin-bottom: 8px;
     font-size: 18px;
-    color: #252b33;
+    color: var(--primary-color);
     font-weight: 500;
     line-height: 1.2;
 }
@@ -1020,10 +1092,17 @@ ul {
 .coffe__span {
     margin-right: 8px;
     line-height: 1.5;
+    color: #4c4d4d;
+    font-weight: bold;
 }
 
 .coffe__lg {
     display: inline;
+    color: #656565;
+}
+
+.coffe__links {
+    color: var(--primary-color);
 }
 
 .coffe__media-list {
@@ -1042,6 +1121,10 @@ ul {
 .share__bx {
     color: #4c4d4d;
     font-size: 25px;
+}
+
+.share__bx:hover {
+    color: var(--primary-color);
 }
 
 
@@ -1150,7 +1233,11 @@ ul {
     .about__big-title {
         top: 0;
     }
-/* 
+
+    .about__big-title {
+        width: 100%;
+    }
+    /* 
     .portfolio__item{
         padding: 0;
     } */
@@ -1158,7 +1245,10 @@ ul {
 }
 
 .test {
+    /* right: 0; */
+    /* opacity: 1; */
     display: block;
+    /* z-index: 10; */
 }
 
 .show {
